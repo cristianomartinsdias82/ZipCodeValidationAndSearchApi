@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZipCodeValidationAndSearchApi</name>
+    </assembly>
+    <members>
+        <member name="M:ZipCodeValidationAndSearchApi.SearchAddressByZipCode.v1.SearchAddressByZipCodeController.SearchAddressByZipCode(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the address based on an informed zip code
+            </summary>
+            <response code="200">Retrieves an OK status code along with data</response>
+            <response code="400">Retrieves a Bad Request status code along with a failed operation result object</response>
+        </member>
+    </members>
+</doc>

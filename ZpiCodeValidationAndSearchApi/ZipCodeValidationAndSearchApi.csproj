@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\Codebase\_.NET Solutions\Core\5.x\ZpiCodeValidationAndSearchApi\ZpiCodeValidationAndSearchApi\ZipCodeValidationAndSearchApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.1" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZipCodeValidationAndSearchApi.Application\ZipCodeValidationAndSearchApi.Application.csproj" />
+    <ProjectReference Include="..\ZipCodeValidationAndSearchApi.Infrastructure\ZipCodeValidationAndSearchApi.Infrastructure.csproj" />
+    <ProjectReference Include="..\ZipCodeValidationAndSearchApi.SharedKernel\ZipCodeValidationAndSearchApi.SharedKernel.csproj" />
+  </ItemGroup>
+
+</Project>
